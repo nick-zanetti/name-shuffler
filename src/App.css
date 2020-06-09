@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html, body, #root, .App {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-top: 20%;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#wrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start; 
+  background-color: blueviolet;
   color: white;
+  font-family: 'Varela Round', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+ol {
+  width: 60%;
+  display: flex;
+  
+  flex-wrap: wrap;
+  /* border: 1px solid white; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ol {
+  height: 100px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-left: .5rem;
+  border: 1px solid black;
+} */
+
+ol li {
+  list-style-position: inside;
+  float: left;
+  font-size: 1.5rem;
+  /* display: inline-block; */
+}
+.individual-name-container {
+  flex: 0 0 33.3333%;
+  flex-wrap: wrap;
+  /* height: 1.7rem; */
+  /* margin-bottom: -.3rem; */
+  
+ /* display: flex;
+ margin: .25rem;  */
+ 
+} 
+
+.remove-buttons {
+  color: red;
+  padding: 0;
+  border: 0;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  background-color: blueviolet;
+}
+
+#name-input {
+  border: none;
+  background-color: blueviolet;
+  font-size: 1.5rem;
+}
+
+#name-input:focus {
+  outline: none;
+}
+
+.bottom-button {
+  color: white;
+  background-color: blueviolet;
+  font-size: 1.3rem;
 }
